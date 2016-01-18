@@ -24,7 +24,7 @@ until remaining.size == 0 do
 
   primary_list.each do |id,selected|
     return_list[id] = picker(selected,remaining)
-    puts "#{id} -->  #{remaining.size}"
+#    puts "#{id} -->  #{remaining.size}"
     remaining.delete_if{|chosen| chosen[0] == return_list[id]}
   end 
 end
